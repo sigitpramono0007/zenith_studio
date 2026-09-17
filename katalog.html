@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Katalog Paket — Zenith Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><img src="assets/logo-lockup.png" alt="Zenith Studio"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="katalog.html" class="active">Katalog</a></li>
+      <li><a href="index.html#proses">Proses Kerja</a></li>
+      <li><a href="index.html#testimoni">Testimoni</a></li>
+      <li><a href="admin.html">Admin</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="index.html#kontak" class="btn btn-outline btn-sm">Konsultasi</a>
+      <a href="katalog.html" class="btn btn-primary btn-sm">Lihat Katalog</a>
+      <button class="nav-toggle" aria-label="Buka menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Beranda</a><span>/</span><span>Katalog</span></div>
+    <h1 style="font-size:2.2rem; max-width:16ch;">Katalog paket landing page.</h1>
+    <p style="max-width:56ch;">Pilih paket yang paling sesuai dengan kebutuhan dan tahap bisnis Anda. Semua paket dapat disesuaikan lebih lanjut.</p>
+  </div>
+</div>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="filter-bar">
+      <div class="filter-chips">
+        <button class="chip is-active" data-category="Semua">Semua</button>
+        <button class="chip" data-category="Bisnis">Bisnis</button>
+        <button class="chip" data-category="E-commerce">E-commerce</button>
+        <button class="chip" data-category="SaaS">SaaS</button>
+        <button class="chip" data-category="Event">Event</button>
+        <button class="chip" data-category="Personal">Personal</button>
+      </div>
+      <div class="filter-tools">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="catalogSearch" placeholder="Cari paket...">
+        </div>
+        <select id="catalogSort" class="sort-select">
+          <option value="populer">Paling populer</option>
+          <option value="murah">Harga terendah</option>
+          <option value="mahal">Harga tertinggi</option>
+          <option value="rating">Rating tertinggi</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="catalogGrid" class="catalog-grid"></div>
+    <div class="empty-state">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <p>Tidak ada paket yang cocok dengan pencarian Anda.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-soft">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div>
+        <h2>Tidak yakin paket mana yang cocok?</h2>
+        <p>Konsultasikan kebutuhan Anda, tim kami akan merekomendasikan paket yang paling sesuai.</p>
+      </div>
+      <a href="index.html#kontak" class="btn btn-primary">Konsultasi Gratis</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="assets/logo-lockup-white.png" alt="Zenith Studio"></div>
+        <p style="color:#8E8EB0; max-width:32ch; font-size:.9rem;">Jasa pembuatan landing page website untuk bisnis, produk, dan acara Anda.</p>
+      </div>
+      <div>
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="katalog.html">Katalog</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Layanan</h4>
+        <ul>
+          <li><a href="index.html#layanan">Desain & UI</a></li>
+          <li><a href="index.html#layanan">Copywriting</a></li>
+          <li><a href="index.html#layanan">Pengembangan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <ul>
+          <li><a href="mailto:halo@zenithstudio.id">halo@zenithstudio.id</a></li>
+          <li><a href="#">+62 812 3456 7890</a></li>
+          <li><a href="#">Yogyakarta, Indonesia</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Zenith Studio. Seluruh hak cipta dilindungi.</span>
+      <span>Dibuat dengan teliti untuk klien kami.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
