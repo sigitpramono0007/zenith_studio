@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Admin — Zenith Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="admin-shell">
+  <aside class="admin-sidebar">
+    <div class="admin-logo"><img src="assets/logo-lockup-white.png" alt="Zenith Studio"></div>
+    <nav class="admin-nav">
+      <a href="#" class="active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+        <span>Dashboard</span>
+      </a>
+      <a href="#pesanan">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+        <span>Pesanan</span>
+      </a>
+      <a href="katalog.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        <span>Produk</span>
+      </a>
+      <a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M4.5 20c1.4-3.8 4.4-5.8 7.5-5.8s6.1 2 7.5 5.8"/></svg>
+        <span>Klien</span>
+      </a>
+      <a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 9 19.36a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.64 15a1.7 1.7 0 0 0-1.55-1H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.64 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.64a1.7 1.7 0 0 0 1-1.55V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.36 9c.14.35.4.65 1.55 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1Z"/></svg>
+        <span>Pengaturan</span>
+      </a>
+    </nav>
+    <div class="admin-sidebar-foot">Zenith Studio © 2026<br>Panel Admin v1.0</div>
+  </aside>
+
+  <main class="admin-main">
+    <div class="admin-topbar">
+      <div class="admin-topbar-left">
+        <button class="sidebar-toggle" aria-label="Ciutkan sidebar">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <div>
+          <h2 style="font-size:1.3rem; margin-bottom:2px;">Dashboard</h2>
+          <p style="margin:0; font-size:.85rem;">Ringkasan performa Zenith Studio hari ini.</p>
+        </div>
+      </div>
+      <div class="admin-profile">
+        <div class="admin-avatar">AZ</div>
+        <div>
+          <div style="font-weight:700; font-size:.88rem;">Admin Zenith</div>
+          <div style="font-size:.75rem; color:var(--ink-faint);">Super Admin</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stat-cards">
+      <div class="stat-card">
+        <div class="stat-card-top">
+          <div class="stat-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+          <span class="stat-trend">+12%</span>
+        </div>
+        <div class="stat-value" data-count="248">0</div>
+        <div class="stat-name">Total pesanan</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-top">
+          <div class="stat-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <span class="stat-trend">+8%</span>
+        </div>
+        <div class="stat-value" data-count="86" data-prefix="Rp" data-suffix=" jt">0</div>
+        <div class="stat-name">Pendapatan bulan ini</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-top">
+          <div class="stat-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M4.5 20c1.4-3.8 4.4-5.8 7.5-5.8s6.1 2 7.5 5.8"/></svg></div>
+          <span class="stat-trend">+5%</span>
+        </div>
+        <div class="stat-value" data-count="132">0</div>
+        <div class="stat-name">Klien aktif</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card-top">
+          <div class="stat-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 2 2.9 6.6 7.1.6-5.4 4.7 1.7 7-6.3-3.9L5.7 21l1.7-7-5.4-4.7 7.1-.6z"/></svg></div>
+          <span class="stat-trend">4.9</span>
+        </div>
+        <div class="stat-value" data-count="4.9">0</div>
+        <div class="stat-name">Rating rata-rata</div>
+      </div>
+    </div>
+
+    <div class="admin-panels">
+      <div class="panel">
+        <div class="panel-head">
+          <h3>Pendapatan 6 bulan terakhir</h3>
+          <select class="sort-select" style="font-size:.78rem; padding:8px 14px;">
+            <option>2026</option>
+            <option>2025</option>
+          </select>
+        </div>
+        <div class="bar-chart">
+          <div class="bar-col"><div class="bar" data-height="45"></div><span>Apr</span></div>
+          <div class="bar-col"><div class="bar" data-height="58"></div><span>Mei</span></div>
+          <div class="bar-col"><div class="bar" data-height="40"></div><span>Jun</span></div>
+          <div class="bar-col"><div class="bar" data-height="70"></div><span>Jul</span></div>
+          <div class="bar-col"><div class="bar" data-height="64"></div><span>Agu</span></div>
+          <div class="bar-col is-peak"><div class="bar" data-height="92"></div><span>Sep</span></div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3>Paket terlaris</h3></div>
+        <div class="legend-list">
+          <div>
+            <div class="legend-row"><span class="swatch" style="background:var(--primary);"></span><span class="name">Growth Page</span><span class="pct">34%</span></div>
+            <div class="legend-bar"><span data-width="34" style="background:var(--primary);"></span></div>
+          </div>
+          <div>
+            <div class="legend-row"><span class="swatch" style="background:var(--accent);"></span><span class="name">Toko Ringkas</span><span class="pct">26%</span></div>
+            <div class="legend-bar"><span data-width="26" style="background:var(--accent);"></span></div>
+          </div>
+          <div>
+            <div class="legend-row"><span class="swatch" style="background:var(--pink);"></span><span class="name">Starter Page</span><span class="pct">22%</span></div>
+            <div class="legend-bar"><span data-width="22" style="background:var(--pink);"></span></div>
+          </div>
+          <div>
+            <div class="legend-row"><span class="swatch" style="background:#C99B00;"></span><span class="name">Peluncuran SaaS</span><span class="pct">18%</span></div>
+            <div class="legend-bar"><span data-width="18" style="background:#C99B00;"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pesanan" class="admin-toolbar">
+      <h3 style="margin:0; font-size:1.05rem;">Pesanan terbaru</h3>
+      <button class="btn btn-primary btn-sm" id="openModalBtn">+ Tambah Produk</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Klien</th><th>Paket</th><th>Tanggal</th><th>Status</th><th>Nilai</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr style="animation-delay:.05s">
+            <td><div class="client-cell"><div class="client-avatar">RW</div>Rina Wulandari</div></td>
+            <td>Growth Page</td>
+            <td>12 Sep 2026</td>
+            <td><span class="status-badge status-selesai">Selesai</span></td>
+            <td>Rp3.200.000</td>
+            <td><button class="row-action">⋯</button></td>
+          </tr>
+          <tr style="animation-delay:.12s">
+            <td><div class="client-cell"><div class="client-avatar">AF</div>Ahmad Fadli</div></td>
+            <td>Toko Ringkas</td>
+            <td>14 Sep 2026</td>
+            <td><span class="status-badge status-proses">Diproses</span></td>
+            <td>Rp4.800.000</td>
+            <td><button class="row-action">⋯</button></td>
+          </tr>
+          <tr style="animation-delay:.19s">
+            <td><div class="client-cell"><div class="client-avatar">SP</div>Sarah Putri</div></td>
+            <td>Peluncuran SaaS</td>
+            <td>15 Sep 2026</td>
+            <td><span class="status-badge status-menunggu">Menunggu</span></td>
+            <td>Rp5.500.000</td>
+            <td><button class="row-action">⋯</button></td>
+          </tr>
+          <tr style="animation-delay:.26s">
+            <td><div class="client-cell"><div class="client-avatar">DK</div>Dian Kusuma</div></td>
+            <td>Starter Page</td>
+            <td>16 Sep 2026</td>
+            <td><span class="status-badge status-selesai">Selesai</span></td>
+            <td>Rp1.500.000</td>
+            <td><button class="row-action">⋯</button></td>
+          </tr>
+          <tr style="animation-delay:.33s">
+            <td><div class="client-cell"><div class="client-avatar">BS</div>Bagas Setiawan</div></td>
+            <td>Halaman Acara</td>
+            <td>17 Sep 2026</td>
+            <td><span class="status-badge status-proses">Diproses</span></td>
+            <td>Rp2.200.000</td>
+            <td><button class="row-action">⋯</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<!-- MODAL: Tambah Produk -->
+<div class="modal-overlay" id="productModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3 style="margin:0; font-size:1.15rem;">Tambah Produk Baru</h3>
+      <button class="modal-close" id="closeModalBtn" aria-label="Tutup">✕</button>
+    </div>
+    <form id="productForm">
+      <div class="form-field">
+        <label>Nama paket</label>
+        <input type="text" placeholder="cth. Landing Page Kampanye" required>
+      </div>
+      <div class="form-field">
+        <label>Kategori</label>
+        <select required>
+          <option value="">Pilih kategori</option>
+          <option>Bisnis</option>
+          <option>E-commerce</option>
+          <option>SaaS</option>
+          <option>Event</option>
+          <option>Personal</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label>Harga (Rp)</label>
+        <input type="number" placeholder="cth. 2500000" required>
+      </div>
+      <div class="form-field">
+        <label>Deskripsi singkat</label>
+        <textarea rows="3" placeholder="Jelaskan paket ini secara singkat"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Simpan Produk</button>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast"><span class="dot"></span><span>Produk berhasil ditambahkan</span></div>
+
+<script src="script.js"></script>
+</body>
+</html>
