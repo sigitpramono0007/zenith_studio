@@ -284,7 +284,7 @@ function renderCatalog(){
 function renderFeatured(){
   const grid = document.querySelector("#featuredGrid");
   if(!grid) return;
-  const featured = ["basic", "business", "profesional"];
+  const featured = ["beginner", "basic", "business"];
   grid.innerHTML = featured.map(id => {
     const p = ZENITH_PRODUCTS.find(x => x.id === id);
     return `
