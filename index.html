@@ -20,9 +20,10 @@
       <li><a href="katalog.html">Katalog</a></li>
       <li><a href="index.html#proses">Proses Kerja</a></li>
       <li><a href="index.html#testimoni">Testimoni</a></li>
-      <li><a href="admin.html">Admin</a></li>
+      <li class="admin-only" style="display:none;"><a href="admin.html">Admin</a></li>
     </ul>
     <div class="nav-cta">
+      <span id="authSlot" class="auth-slot"></span>
       <a href="katalog.html" class="btn btn-outline btn-sm">Lihat Katalog</a>
       <a href="#kontak" class="btn btn-primary btn-sm">Konsultasi Gratis</a>
       <button class="nav-toggle" aria-label="Buka menu"><span></span><span></span><span></span></button>
@@ -72,7 +73,7 @@
   <div class="container stats-grid reveal-stagger">
     <div><div class="stat-num" data-count="120" data-suffix="+">0</div><div class="stat-label">Proyek selesai</div></div>
     <div><div class="stat-num" data-count="98" data-suffix="%">0</div><div class="stat-label">Klien puas</div></div>
-    <div><div class="stat-num" data-count="6" data-suffix=" kategori">0</div><div class="stat-label">Jenis paket</div></div>
+    <div><div class="stat-num" data-count="4" data-suffix=" paket">0</div><div class="stat-label">Jenis paket</div></div>
     <div><div class="stat-num" data-count="3" data-suffix=" hari">0</div><div class="stat-label">Pengerjaan tercepat</div></div>
   </div>
 </div>
@@ -151,6 +152,7 @@
       <p>Setiap paket bisa disesuaikan lebih lanjut sesuai kebutuhan spesifik proyek Anda.</p>
     </div>
     <div id="featuredGrid" class="grid-3"></div>
+    <p class="domain-note" style="text-align:center; margin-top:24px;">* Harga belum termasuk domain.</p>
     <div style="text-align:center; margin-top:40px;">
       <a href="katalog.html" class="btn btn-outline">Lihat Semua Paket</a>
     </div>
@@ -216,7 +218,7 @@
         <ul>
           <li><a href="index.html">Beranda</a></li>
           <li><a href="katalog.html">Katalog</a></li>
-          <li><a href="admin.html">Admin</a></li>
+          <li class="admin-only" style="display:none;"><a href="admin.html">Admin</a></li>
         </ul>
       </div>
       <div>

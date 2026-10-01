@@ -3,15 +3,15 @@
 ========================================================= */
 const ZENITH_PRODUCTS = [
   {
-    id: "starter",
-    name: "Starter Page",
-    category: "Bisnis",
-    price: 1500000,
+    id: "beginner",
+    name: "Beginner",
+    category: "Beginner",
+    price: 0,
     rating: 4.8,
     reviews: 32,
     thumb: "thumb-a",
     tagline: "Landing page satu halaman untuk memulai kehadiran online bisnis kecil.",
-    desc: "Starter Page cocok untuk usaha kecil atau produk baru yang butuh halaman profesional dengan cepat. Desain bersih, fokus pada satu pesan utama, dan siap menerima calon pelanggan pertama.",
+    desc: "Beginner cocok untuk usaha kecil atau produk baru yang butuh halaman profesional dengan cepat. Desain bersih, fokus pada satu pesan utama, dan siap menerima calon pelanggan pertama.",
     days: "3 hari kerja",
     revisions: "2x revisi",
     features: [
@@ -23,19 +23,19 @@ const ZENITH_PRODUCTS = [
     ],
     faq: [
       ["Apakah kontennya dibuatkan?", "Ya, tim kami membantu menyusun copywriting singkat berdasarkan brief yang Anda berikan."],
-      ["Bisakah upgrade paket nanti?", "Bisa. Selisih biaya akan disesuaikan bila Anda upgrade ke paket Growth atau lainnya."]
+      ["Bisakah upgrade paket nanti?", "Bisa. Selisih biaya akan disesuaikan bila Anda upgrade ke paket Basic atau lainnya."]
     ]
   },
   {
-    id: "growth",
-    name: "Growth Page",
-    category: "Bisnis",
-    price: 3200000,
+    id: "basic",
+    name: "Basic",
+    category: "Basic",
+    price: 200000,
     rating: 4.9,
     reviews: 58,
     thumb: "thumb-d",
     tagline: "Landing page dengan animasi scroll dan integrasi CRM untuk mendorong konversi.",
-    desc: "Growth Page dirancang untuk bisnis yang sudah berjalan dan ingin menaikkan angka konversi. Termasuk copywriting yang lebih dalam, integrasi WhatsApp/CRM, dan animasi yang membangun kepercayaan pengunjung.",
+    desc: "Basic dirancang untuk bisnis yang sudah berjalan dan ingin menaikkan angka konversi. Termasuk copywriting yang lebih dalam, integrasi WhatsApp/CRM, dan animasi yang membangun kepercayaan pengunjung.",
     days: "5 hari kerja",
     revisions: "3x revisi",
     features: [
@@ -47,19 +47,19 @@ const ZENITH_PRODUCTS = [
     ],
     faq: [
       ["Integrasi CRM apa saja yang didukung?", "Kami mendukung WhatsApp Business API, Google Sheets, dan beberapa CRM populer sesuai kebutuhan."],
-      ["Apakah termasuk pemasangan Google Analytics?", "Ya, Growth Page sudah termasuk pemasangan analitik dasar."]
+      ["Apakah termasuk pemasangan Google Analytics?", "Ya, paket Basic sudah termasuk pemasangan analitik dasar."]
     ]
   },
   {
-    id: "ecommerce",
-    name: "Toko Ringkas",
-    category: "E-commerce",
-    price: 4800000,
+    id: "business",
+    name: "Business",
+    category: "Business",
+    price: 500000,
     rating: 4.7,
     reviews: 24,
     thumb: "thumb-e",
     tagline: "Landing page katalog produk dengan keranjang sederhana dan pembayaran online.",
-    desc: "Toko Ringkas ideal untuk brand yang menjual beberapa produk unggulan tanpa perlu platform e-commerce penuh. Pengunjung bisa memilih produk, memasukkan ke keranjang, dan membayar langsung.",
+    desc: "Business ideal untuk brand yang menjual beberapa produk unggulan tanpa perlu platform e-commerce penuh. Pengunjung bisa memilih produk, memasukkan ke keranjang, dan membayar langsung.",
     days: "7 hari kerja",
     revisions: "3x revisi",
     features: [
@@ -75,10 +75,10 @@ const ZENITH_PRODUCTS = [
     ]
   },
   {
-    id: "saas",
-    name: "Peluncuran SaaS",
-    category: "SaaS",
-    price: 5500000,
+    id: "profesional",
+    name: "Profesional",
+    category: "Profesional",
+    price: null,
     rating: 5.0,
     reviews: 19,
     thumb: "thumb-f",
@@ -97,54 +97,6 @@ const ZENITH_PRODUCTS = [
       ["Apakah bisa menampilkan video demo?", "Bisa, kami akan membantu menempatkan video demo produk di bagian hero atau fitur."],
       ["Apakah termasuk copywriting teknis?", "Ya, tim kami akan menyusun copy yang menjelaskan fitur teknis secara mudah dipahami."]
     ]
-  },
-  {
-    id: "event",
-    name: "Halaman Acara",
-    category: "Event",
-    price: 2200000,
-    rating: 4.8,
-    reviews: 41,
-    thumb: "thumb-c",
-    tagline: "Landing page pendaftaran acara dengan hitung mundur dan peta lokasi.",
-    desc: "Cocok untuk seminar, workshop, atau acara komunitas. Dilengkapi hitung mundur menuju hari-H, formulir pendaftaran, dan peta lokasi agar peserta mudah menemukan tempat acara.",
-    days: "4 hari kerja",
-    revisions: "2x revisi",
-    features: [
-      "Hitung mundur otomatis ke tanggal acara",
-      "Formulir pendaftaran & konfirmasi email",
-      "Peta lokasi tertanam",
-      "Galeri pembicara/sponsor",
-      "Tombol bagikan ke media sosial"
-    ],
-    faq: [
-      ["Apakah bisa untuk acara berulang/rutin?", "Bisa, kami dapat menyiapkan versi yang mudah diperbarui setiap acara berikutnya."],
-      ["Apakah tiket berbayar didukung?", "Untuk tiket berbayar, kami akan menambahkan integrasi payment gateway sesuai kebutuhan."]
-    ]
-  },
-  {
-    id: "portfolio",
-    name: "Portofolio Personal",
-    category: "Personal",
-    price: 1800000,
-    rating: 4.9,
-    reviews: 65,
-    thumb: "thumb-b",
-    tagline: "Landing page portofolio untuk kreator, freelancer, dan profesional individu.",
-    desc: "Tunjukkan karya terbaik Anda dalam satu halaman yang rapi dan mudah dijelajahi. Cocok untuk desainer, fotografer, penulis, atau profesional yang ingin membangun citra personal secara online.",
-    days: "3 hari kerja",
-    revisions: "2x revisi",
-    features: [
-      "Galeri karya dengan tata letak fleksibel",
-      "CV / pengalaman interaktif",
-      "Formulir kontak & tautan sosial media",
-      "Optimasi tampilan di perangkat mobile",
-      "Sertifikat kepemilikan desain penuh"
-    ],
-    faq: [
-      ["Apakah saya bisa mengganti karya sendiri nanti?", "Kami akan memberikan panduan singkat agar Anda dapat memperbarui galeri secara mandiri."],
-      ["Apakah tersedia dalam bahasa Inggris?", "Bisa, silakan sampaikan kebutuhan dwibahasa saat sesi konsultasi."]
-    ]
   }
 ];
 
@@ -153,6 +105,16 @@ const ZENITH_PRODUCTS = [
 ========================================================= */
 function formatRupiah(num){
   return "Rp" + num.toLocaleString("id-ID");
+}
+function formatPrice(p){
+  if(p.price === null) return "Disesuaikan";
+  if(p.price === 0) return "Gratis";
+  return formatRupiah(p.price);
+}
+function priceHTML(p){
+  if(p.price === null) return "Disesuaikan<br><small>dengan customer</small>";
+  if(p.price === 0) return "Gratis<br><small>&nbsp;</small>";
+  return formatRupiah(p.price) + "<br><small>per proyek</small>";
 }
 
 /* =========================================================
@@ -271,7 +233,7 @@ function renderCatalog(){
             <span>★ ${p.rating}</span>
           </div>
           <div class="package-foot">
-            <span class="package-price">${formatRupiah(p.price)}<br><small>per proyek</small></span>
+            <span class="package-price">${priceHTML(p)}</span>
             <span class="btn btn-outline btn-sm">Lihat detail</span>
           </div>
         </div>
@@ -288,8 +250,8 @@ function renderCatalog(){
       return matchCat && matchTerm;
     });
 
-    if(sortVal === "murah") list.sort((a,b) => a.price - b.price);
-    if(sortVal === "mahal") list.sort((a,b) => b.price - a.price);
+    if(sortVal === "murah") list.sort((a,b) => (a.price ?? Infinity) - (b.price ?? Infinity));
+    if(sortVal === "mahal") list.sort((a,b) => (b.price ?? Infinity) - (a.price ?? Infinity));
     if(sortVal === "rating") list.sort((a,b) => b.rating - a.rating);
 
     grid.innerHTML = list.map(cardHTML).join("");
@@ -322,7 +284,7 @@ function renderCatalog(){
 function renderFeatured(){
   const grid = document.querySelector("#featuredGrid");
   if(!grid) return;
-  const featured = ["growth", "ecommerce", "saas"];
+  const featured = ["basic", "business", "profesional"];
   grid.innerHTML = featured.map(id => {
     const p = ZENITH_PRODUCTS.find(x => x.id === id);
     return `
@@ -332,7 +294,7 @@ function renderFeatured(){
           <h3>${p.name}</h3>
           <p>${p.tagline}</p>
           <div class="package-foot">
-            <span class="package-price">${formatRupiah(p.price)}<br><small>per proyek</small></span>
+            <span class="package-price">${priceHTML(p)}</span>
             <span class="btn btn-outline btn-sm">Lihat detail</span>
           </div>
         </div>
@@ -372,7 +334,9 @@ function renderDetail(){
   document.querySelector("#detailTitle").textContent = p.name;
   document.querySelector("#detailRating").textContent = `${p.rating} (${p.reviews} ulasan)`;
   document.querySelector("#detailTagline").textContent = p.tagline;
-  document.querySelector("#detailPrice").textContent = formatRupiah(p.price);
+  document.querySelector("#detailPrice").textContent = formatPrice(p);
+  const unit = document.querySelector("#detailPriceUnit");
+  if(unit) unit.textContent = p.price === null ? "/ dengan customer" : (p.price === 0 ? "" : "/ per proyek");
   document.querySelector("#detailDays").textContent = p.days;
   document.querySelector("#detailDesc").textContent = p.desc;
 
@@ -401,7 +365,7 @@ function renderDetail(){
         <h3>${r.name}</h3>
         <p>${r.tagline}</p>
         <div class="package-foot">
-          <span class="package-price">${formatRupiah(r.price)}<br><small>per proyek</small></span>
+          <span class="package-price">${priceHTML(r)}</span>
           <span class="btn btn-outline btn-sm">Lihat detail</span>
         </div>
       </div>
@@ -506,9 +470,86 @@ function initAdmin(){
 }
 
 /* =========================================================
+   Autentikasi (login admin / pengguna biasa)
+========================================================= */
+const AUTH_KEY = "zenith_auth";
+
+function getAuth(){
+  try { return JSON.parse(localStorage.getItem(AUTH_KEY)); }
+  catch(e){ return null; }
+}
+function setAuth(data){ localStorage.setItem(AUTH_KEY, JSON.stringify(data)); }
+function clearAuth(){ localStorage.removeItem(AUTH_KEY); }
+
+function escapeHTML(str){
+  return String(str).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+function initLogin(){
+  const form = document.querySelector("#loginForm");
+  if(!form) return;
+
+  // Sudah login: arahkan sesuai peran
+  const current = getAuth();
+  if(current){
+    window.location.replace(current.role === "admin" ? "admin.html" : "index.html");
+    return;
+  }
+
+  const errorBox = document.querySelector("#loginError");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const username = document.querySelector("#loginUser").value.trim();
+    const password = document.querySelector("#loginPass").value;
+
+    if(!username || !password){
+      errorBox.textContent = "Username dan password wajib diisi.";
+      return;
+    }
+
+    if(username === "admin" && password === "admin123"){
+      setAuth({ username: "admin", role: "admin" });
+      window.location.href = "admin.html";
+    } else {
+      // Selain admin: login sebagai pengguna biasa (tanpa akses admin)
+      setAuth({ username: username, role: "user" });
+      window.location.href = "index.html";
+    }
+  });
+}
+
+function initAuth(){
+  const auth = getAuth();
+
+  // Menu Admin hanya tampil untuk admin
+  document.querySelectorAll(".admin-only").forEach(el => {
+    el.style.display = (auth && auth.role === "admin") ? "" : "none";
+  });
+
+  // Tombol Masuk / sapaan + Keluar di navbar
+  const slot = document.querySelector("#authSlot");
+  if(slot){
+    if(auth){
+      slot.innerHTML = `<span class="auth-user">Halo, ${escapeHTML(auth.username)}</span>
+        <button type="button" class="btn btn-outline btn-sm" id="logoutBtn">Keluar</button>`;
+    } else {
+      slot.innerHTML = `<a href="login.html" class="btn btn-outline btn-sm">Masuk</a>`;
+    }
+  }
+
+  // Tombol Keluar (navbar atau dashboard admin)
+  document.querySelector("#logoutBtn")?.addEventListener("click", () => {
+    clearAuth();
+    window.location.href = "login.html";
+  });
+}
+
+/* =========================================================
    Init all
 ========================================================= */
 document.addEventListener("DOMContentLoaded", () => {
+  initAuth();
+  initLogin();
   initNav();
   initReveal();
   initCounters();

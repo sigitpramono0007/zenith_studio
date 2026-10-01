@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masuk — Zenith Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="assets/logo-main.jpeg">
+</head>
+<body class="login-page">
+
+<main class="login-wrap">
+  <div class="login-card">
+    <a href="index.html" class="login-logo"><img src="assets/logo-lockup.png" alt="Zenith Studio"></a>
+    <h1>Masuk ke akun Anda</h1>
+    <p>Masukkan username dan password untuk melanjutkan.</p>
+
+    <form id="loginForm" novalidate>
+      <div class="form-field">
+        <label for="loginUser">Username</label>
+        <input type="text" id="loginUser" autocomplete="username" placeholder="Masukkan username" required>
+      </div>
+      <div class="form-field">
+        <label for="loginPass">Password</label>
+        <input type="password" id="loginPass" autocomplete="current-password" placeholder="Masukkan password" required>
+      </div>
+      <p class="login-error" id="loginError" role="alert"></p>
+      <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+    </form>
+
+    <a href="index.html" class="login-back">&larr; Kembali ke beranda</a>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

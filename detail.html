@@ -19,9 +19,10 @@
       <li><a href="katalog.html" class="active">Katalog</a></li>
       <li><a href="index.html#proses">Proses Kerja</a></li>
       <li><a href="index.html#testimoni">Testimoni</a></li>
-      <li><a href="admin.html">Admin</a></li>
+      <li class="admin-only" style="display:none;"><a href="admin.html">Admin</a></li>
     </ul>
     <div class="nav-cta">
+      <span id="authSlot" class="auth-slot"></span>
       <a href="index.html#kontak" class="btn btn-outline btn-sm">Konsultasi</a>
       <a href="katalog.html" class="btn btn-primary btn-sm">Lihat Katalog</a>
       <button class="nav-toggle" aria-label="Buka menu"><span></span><span></span><span></span></button>
@@ -57,8 +58,9 @@
       <p id="detailTagline"></p>
       <div class="detail-price-row">
         <span class="detail-price" id="detailPrice">Rp0</span>
-        <span style="color:var(--ink-faint); font-size:.85rem;">/ per proyek</span>
+        <span id="detailPriceUnit" style="color:var(--ink-faint); font-size:.85rem;">/ per proyek</span>
       </div>
+      <p class="domain-note">* Harga belum termasuk domain.</p>
       <p style="font-size:.88rem; color:var(--ink-faint); margin-bottom:24px;">Estimasi pengerjaan: <strong id="detailDays" style="color:var(--ink);"></strong></p>
       <div class="detail-actions">
         <a href="index.html#kontak" class="btn btn-primary">Pesan Sekarang</a>
@@ -106,7 +108,7 @@
         <ul>
           <li><a href="index.html">Beranda</a></li>
           <li><a href="katalog.html">Katalog</a></li>
-          <li><a href="admin.html">Admin</a></li>
+          <li class="admin-only" style="display:none;"><a href="admin.html">Admin</a></li>
         </ul>
       </div>
       <div>

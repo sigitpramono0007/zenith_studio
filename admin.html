@@ -8,6 +8,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>
+  // Hanya admin yang boleh membuka halaman ini
+  (function(){
+    var auth = null;
+    try { auth = JSON.parse(localStorage.getItem("zenith_auth")); } catch(e) {}
+    if(!auth || auth.role !== "admin"){ window.location.replace("login.html"); }
+  })();
+</script>
 </head>
 <body>
 
@@ -56,6 +64,7 @@
           <div style="font-weight:700; font-size:.88rem;">Admin Zenith</div>
           <div style="font-size:.75rem; color:var(--ink-faint);">Super Admin</div>
         </div>
+        <button class="btn btn-outline btn-sm" id="logoutBtn" style="margin-left:8px;">Keluar</button>
       </div>
     </div>
 
@@ -116,19 +125,19 @@
         <div class="panel-head"><h3>Paket terlaris</h3></div>
         <div class="legend-list">
           <div>
-            <div class="legend-row"><span class="swatch" style="background:var(--primary);"></span><span class="name">Growth Page</span><span class="pct">34%</span></div>
+            <div class="legend-row"><span class="swatch" style="background:var(--primary);"></span><span class="name">Basic</span><span class="pct">34%</span></div>
             <div class="legend-bar"><span data-width="34" style="background:var(--primary);"></span></div>
           </div>
           <div>
-            <div class="legend-row"><span class="swatch" style="background:var(--accent);"></span><span class="name">Toko Ringkas</span><span class="pct">26%</span></div>
+            <div class="legend-row"><span class="swatch" style="background:var(--accent);"></span><span class="name">Business</span><span class="pct">26%</span></div>
             <div class="legend-bar"><span data-width="26" style="background:var(--accent);"></span></div>
           </div>
           <div>
-            <div class="legend-row"><span class="swatch" style="background:var(--pink);"></span><span class="name">Starter Page</span><span class="pct">22%</span></div>
+            <div class="legend-row"><span class="swatch" style="background:var(--pink);"></span><span class="name">Beginner</span><span class="pct">22%</span></div>
             <div class="legend-bar"><span data-width="22" style="background:var(--pink);"></span></div>
           </div>
           <div>
-            <div class="legend-row"><span class="swatch" style="background:#C99B00;"></span><span class="name">Peluncuran SaaS</span><span class="pct">18%</span></div>
+            <div class="legend-row"><span class="swatch" style="background:#C99B00;"></span><span class="name">Profesional</span><span class="pct">18%</span></div>
             <div class="legend-bar"><span data-width="18" style="background:#C99B00;"></span></div>
           </div>
         </div>
@@ -147,42 +156,42 @@
         <tbody>
           <tr style="animation-delay:.05s">
             <td><div class="client-cell"><div class="client-avatar">RW</div>Rina Wulandari</div></td>
-            <td>Growth Page</td>
+            <td>Basic</td>
             <td>12 Sep 2026</td>
             <td><span class="status-badge status-selesai">Selesai</span></td>
-            <td>Rp3.200.000</td>
+            <td>Rp200.000</td>
             <td><button class="row-action">⋯</button></td>
           </tr>
           <tr style="animation-delay:.12s">
             <td><div class="client-cell"><div class="client-avatar">AF</div>Ahmad Fadli</div></td>
-            <td>Toko Ringkas</td>
+            <td>Business</td>
             <td>14 Sep 2026</td>
             <td><span class="status-badge status-proses">Diproses</span></td>
-            <td>Rp4.800.000</td>
+            <td>Rp500.000</td>
             <td><button class="row-action">⋯</button></td>
           </tr>
           <tr style="animation-delay:.19s">
             <td><div class="client-cell"><div class="client-avatar">SP</div>Sarah Putri</div></td>
-            <td>Peluncuran SaaS</td>
+            <td>Profesional</td>
             <td>15 Sep 2026</td>
             <td><span class="status-badge status-menunggu">Menunggu</span></td>
-            <td>Rp5.500.000</td>
+            <td>Disesuaikan</td>
             <td><button class="row-action">⋯</button></td>
           </tr>
           <tr style="animation-delay:.26s">
             <td><div class="client-cell"><div class="client-avatar">DK</div>Dian Kusuma</div></td>
-            <td>Starter Page</td>
+            <td>Beginner</td>
             <td>16 Sep 2026</td>
             <td><span class="status-badge status-selesai">Selesai</span></td>
-            <td>Rp1.500.000</td>
+            <td>Gratis</td>
             <td><button class="row-action">⋯</button></td>
           </tr>
           <tr style="animation-delay:.33s">
             <td><div class="client-cell"><div class="client-avatar">BS</div>Bagas Setiawan</div></td>
-            <td>Halaman Acara</td>
+            <td>Basic</td>
             <td>17 Sep 2026</td>
             <td><span class="status-badge status-proses">Diproses</span></td>
-            <td>Rp2.200.000</td>
+            <td>Rp200.000</td>
             <td><button class="row-action">⋯</button></td>
           </tr>
         </tbody>
@@ -207,11 +216,10 @@
         <label>Kategori</label>
         <select required>
           <option value="">Pilih kategori</option>
-          <option>Bisnis</option>
-          <option>E-commerce</option>
-          <option>SaaS</option>
-          <option>Event</option>
-          <option>Personal</option>
+          <option>Beginner</option>
+          <option>Basic</option>
+          <option>Business</option>
+          <option>Profesional</option>
         </select>
       </div>
       <div class="form-field">
